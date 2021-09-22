@@ -1,0 +1,30 @@
+.button{
+    inline-size: 32px; 
+    block-size: 32px; 
+    border: none;
+    background-color: transparent; 
+    background-repeat: no-repeat; /*para que NO se repita la imagen en caso de que se aumente el tamaño del botón*/
+    background-position: center;
+    cursor: pointer; /*para que aparezca la manita cuando el mouse pasa por encima del button*/
+}
+
+.button:active{ /*active es una pseudoclase de un button: detecta cuando éste es presionado*/
+    transform: scale(0.9); /* 1 = 100%, el bottón es transformado a una escala de 0.9 cuando es presionado (efecto visual)*/
+}
+
+#play{
+    background-image: url('../assets/images/play.svg');
+}
+
+#pause{
+    background-image: url('../assets/images/pause.svg');
+}
+
+/*nota: pensé en cambiarle el nombre (-10.svg) porque no siempre serán estrictamente 10 segundos*/
+#backward{
+    background-image: url('../assets/images/backward.svg');
+}
+
+#forward{
+    background-image: url('../assets/images/forward.svg');
+}
